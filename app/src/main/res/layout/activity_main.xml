@@ -5,35 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".normal">
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/hasil"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="100dp"
         android:textSize="60dp"
-        android:text=""
+        android:text="234+12"
+        android:textColor="@color/silver"
         android:textAlignment="textEnd"
-        android:background="@color/colorAccent">
+        android:scrollbars = "vertical"
+        android:gravity="bottom"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@color/black">
+
+
     </TextView>
     <TextView
         android:id="@+id/hasil2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:textSize="60dp"
-        android:text=""
+        android:text="245"
+        android:scrollbars="vertical"
+        android:gravity="bottom"
+        android:textColor="@color/white"
         android:textAlignment="textEnd"
-        android:background="@color/colorAccent">
+        android:background="@color/black">
     </TextView>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_marginTop="0dp"
         android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/delete"
+            android:text="⌫"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/button2"/>
 
         <Button
             android:id="@+id/c"
-            android:text="c"
+            android:text="C"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             style="@style/button2"/>
@@ -76,20 +91,15 @@
             style="@style/button2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="^2" />
+            android:text="^" />
 
         <Button
             android:id="@+id/akar"
             style="@style/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="√" />
-        <Button
-            android:id="@+id/kali"
-            style="@style/button2"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="x" />
+
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -116,12 +126,11 @@
             style="@style/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#000000"
             android:text="9" />
 
         <Button
             android:id="@+id/bagi"
-            style="@style/button1"
+            style="@style/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="/" />
@@ -156,7 +165,7 @@
 
         <Button
             android:id="@+id/kali"
-            style="@style/button1"
+            style="@style/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x" />
@@ -191,7 +200,7 @@
 
         <Button
             android:id="@+id/kurang"
-            style="@style/button1"
+            style="@style/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-" />
@@ -220,14 +229,15 @@
 
         <Button
             android:id="@+id/samadengan"
-            style="@style/button1"
+            style="@style/button4"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="=" />
 
         <Button
             android:id="@+id/tambah"
-            style="@style/button1"
+            style="@style/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="+" />
