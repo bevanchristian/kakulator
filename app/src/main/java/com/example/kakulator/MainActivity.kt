@@ -1,5 +1,4 @@
 package com.example.kakulator
-
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.Toast
@@ -7,12 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
-
 open class MainActivity : AppCompatActivity() {
     lateinit var simpan:String
     var jumlah=0
     var counter=0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,8 +17,6 @@ open class MainActivity : AppCompatActivity() {
         hasil2.setMovementMethod(ScrollingMovementMethod())
         tombol()
     }
-
-
 
     private fun tombol(){
         angka()
@@ -31,14 +26,14 @@ open class MainActivity : AppCompatActivity() {
     }
 
 
-    fun angka(){
+    private fun angka(){
         var kumpulanagka= mapOf(satu to "1",dua to "2",tiga to "3",empat to "4" ,lima to "5", enam to "6", tujuh to "7",delapan to "8",sembilan to "9" ,nol to "0",titik to ".")
         for (x in kumpulanagka){
             x.key.setOnClickListener { penulisan(x.value,0) }
         }
     }
 
-    fun bukanangka(){
+    private fun bukanangka(){
         var kumpulanoperator= mapOf(tambah to "+",kurang to "-", bagi to "/",kali to "*",pangkat to "^")
         for (c in kumpulanoperator){
             c.key.setOnClickListener { penulisan(c.value,1) }
@@ -118,10 +113,7 @@ open class MainActivity : AppCompatActivity() {
             hasil2.text=""
             Toast.makeText(this,"maaf isikan dengan angka",Toast.LENGTH_SHORT).show()
         }
-
-
     }
-
     private fun up(){
         try {
             if(hasil2.text.isNotEmpty()){
@@ -137,8 +129,6 @@ open class MainActivity : AppCompatActivity() {
             hasil2.text=""
             Toast.makeText(this,"maaf isikan dengan angka",Toast.LENGTH_SHORT).show()
         }
-
-
     }
     private fun round(){
         try {

@@ -10,8 +10,8 @@
     <TextView
         android:id="@+id/hasil"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:textSize="60dp"
+        android:layout_height="90dp"
+        android:textSize="50dp"
         android:text="234+12"
         android:textColor="@color/silver"
         android:textAlignment="textEnd"
@@ -25,8 +25,8 @@
     <TextView
         android:id="@+id/hasil2"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:textSize="60dp"
+        android:layout_height="80dp"
+        android:textSize="50dp"
         android:text="245"
         android:scrollbars="vertical"
         android:gravity="bottom"
@@ -46,18 +46,14 @@
             android:layout_height="match_parent"
             style="@style/button2"/>
 
+
         <Button
             android:id="@+id/c"
             android:text="C"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             style="@style/button2"/>
-        <Button
-            android:id="@+id/round"
-            android:text="round"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            style="@style/button2"/>
+
 
         <Button
             android:id="@+id/ac"
@@ -75,27 +71,29 @@
 
         <Button
             android:id="@+id/up"
-            android:text="up"
+            android:text="Ceil"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            style="@style/button2"/>
+            android:textSize="26dp"
+            style="@style/button2bawah"/>
         <Button
             android:id="@+id/floor"
-            android:text="floor"
+            android:text="Floor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            style="@style/button2"/>
-
+            style="@style/button2bawah"/>
         <Button
-            android:id="@+id/pangkat"
-            style="@style/button2"
+            android:id="@+id/round"
+            android:text="Round"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="^" />
+            style="@style/button2bawah"/>
+
+
 
         <Button
             android:id="@+id/akar"
-            style="@style/button2"
+            style="@style/button2bawah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="√" />
@@ -228,12 +226,11 @@
             android:text="." />
 
         <Button
-            android:id="@+id/samadengan"
-            style="@style/button4"
-            android:textColor="@color/black"
+            android:id="@+id/pangkat"
+            style="@style/button1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="=" />
+            android:layout_height="match_parent"
+            android:text="^" />
 
         <Button
             android:id="@+id/tambah"
@@ -245,4 +242,12 @@
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/samadengan"
+        style="@style/button4"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_marginBottom="1dp"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

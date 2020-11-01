@@ -8,6 +8,7 @@
     <color name="orange">#FF8C00</color>
     <color name="orangemuda">#FFA500</color>
     <color name="kuning">#FFFF00</color>
-    <color name="grey">	#2F4F4F</color>
-    <color name="silver">#C0C0C0</color>
+    <color name="grey">	#191919</color>
+    <color name="greymuda">#323232</color>
+    <color name="silver">#b2b2b2</color>
 </resources>
