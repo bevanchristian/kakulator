@@ -25,7 +25,7 @@
     <TextView
         android:id="@+id/hasil2"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:textSize="50dp"
         android:text="245"
         android:scrollbars="vertical"
@@ -89,14 +89,15 @@
             android:layout_height="match_parent"
             style="@style/button2bawah"/>
 
-
-
         <Button
-            android:id="@+id/akar"
+            android:id="@+id/pangkat"
             style="@style/button2bawah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="√" />
+            android:text="^" />
+
+
+
 
 
 
@@ -224,13 +225,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="." />
-
         <Button
-            android:id="@+id/pangkat"
+            android:id="@+id/akar"
             style="@style/button1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="^" />
+            android:layout_height="wrap_content"
+            android:text="√" />
+
 
         <Button
             android:id="@+id/tambah"
